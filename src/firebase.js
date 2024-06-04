@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getDatabase, ref, onValue } from "firebase/database"; // Import the necessary database functions
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCJhlLWTbsLG1GnLyh66H1Ed3-r0jIGAAA",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "bottlecareskripsi.firebaseapp.com",
   databaseURL: "https://bottlecareskripsi-default-rtdb.firebaseio.com",
   projectId: "bottlecareskripsi",
