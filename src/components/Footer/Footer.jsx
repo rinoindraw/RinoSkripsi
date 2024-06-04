@@ -9,9 +9,7 @@ function Footer() {
       <div className={styles.logoFooter}>
         <p>Supported By</p>
         <div className={styles.supportLogo}>
-          {/* <img className={styles.footerLogo} src={pkmkcLogo} alt="Logo" /> */}
           <img className={styles.footerLogo} src={gundar} alt="Logo" />
-          {/* <img className={styles.footerLogo} src={kampusMerdeka} alt="Logo" /> */}
         </div>
       </div>
       <div className={styles.socialFooter}>

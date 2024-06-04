@@ -1,6 +1,5 @@
 import React from "react";
 import ChartOne from "../GraphicChart/OrganicCapacityChart";
-import Footer from "../Footer/Footer";
 import styles from "./TrashBinTwo.module.css";
 import logoSkripsi from "../../assets/logo_skripsi.png";
 
@@ -18,15 +17,9 @@ const TrashBinTwo = () => {
           </div>
           <div className={styles.chartWrapper}>
             <ChartOne />
-            {/* <ChartTwo /> */}
-            {/* <ChartThree /> */}
           </div>
-          {/* <BarChartOne /> */}
         </div>
       </div>
-      {/* <div className={styles.footerContainer}>
-        <Footer />
-      </div> */}
     </section>
   );
 };

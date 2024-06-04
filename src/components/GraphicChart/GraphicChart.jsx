@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Chart } from "chart.js/auto";
 import styles from "./GraphicChart.module.css";
-import {database} from "../../firebase"; // Sesuaikan dengan path ke file konfigurasi Firebase And
+import {database} from "../../firebase"; 
 import { ref, onValue } from "firebase/database";
 
 const TrashCapacityChart = () => {
@@ -50,13 +50,12 @@ const TrashCapacityChart = () => {
   }, [metalCapacity]); // Gunakan metalCapacity sebagai dependensi useEffect
 
   useEffect(() => {
-    const dbRef = ref(database, "tempat_sampah/kapasitas_logam"); // Replace with your database reference path
+    const dbRef = ref(database, "tempat_sampah/kapasitas_logam");
 
     onValue(dbRef, (snapshot) => {
       const data = snapshot.val();
       console.log("Metal Capacity:", data);
-      setMetalCapacity(data); // Perbarui state metalCapacity dengan nilai dari Firebase
-      // Handle the retrieved data here
+      setMetalCapacity(data); 
     });
   }, []);
 
@@ -67,8 +66,8 @@ const TrashCapacityChart = () => {
         <canvas 
           className={styles.chart} 
           ref={chartRef}
-          width={800} // tentukan lebar yang diinginkan
-          height={600} // tentukan tinggi yang diinginkan
+          width={800} 
+          height={600} 
         ></canvas>
       </div>
       <p className={styles.chartNumber}>{metalCapacity}%</p>

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Chart } from "chart.js/auto";
 import styles from "./GraphicChart.module.css";
-import { database } from "../../firebase"; // Sesuaikan dengan path ke file konfigurasi Firebase Anda
+import { database } from "../../firebase";
 import { ref, onValue } from "firebase/database";
 
 const BarChart = () => {
@@ -38,15 +38,6 @@ const BarChart = () => {
           hoverBorderColor: "rgba(0, 128, 0, 1)",
           data: [organicCapacity],
         },
-        // {
-        //   label: "UnOrganic Trash Bin",
-        //   backgroundColor: "rgba(255, 0, 0, 0.3)",
-        //   borderColor: "rgba(255, 0, 0, 1)",
-        //   borderWidth: 1,
-        //   hoverBackgroundColor: "rgba(255, 0, 0, 0.7)",
-        //   hoverBorderColor: "rgba(255, 0, 0, 1)",
-        //   data: [unorganicCapacity],
-        // },
       ],
     };
 
@@ -81,7 +72,6 @@ const BarChart = () => {
   useEffect(() => {
     const metalRef = ref(database, "tempat_sampah/kapasitas_logam");
     const organicRef = ref(database, "tempat_sampah/kapasitas_nonlogam");
-    // const unorganicRef = ref(database, "tong_sampah/kapasitas_unorganik");
 
     onValue(metalRef, (snapshot) => {
       const data = snapshot.val();
@@ -92,11 +82,6 @@ const BarChart = () => {
       const data = snapshot.val();
       setOrganicCapacity(data);
     });
-
-    // onValue(unorganicRef, (snapshot) => {
-    //   const data = snapshot.val();
-    //   setUnorganicCapacity(data);
-    // });
   }, []);
 
   return (

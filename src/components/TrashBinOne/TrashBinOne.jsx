@@ -1,9 +1,5 @@
 import React from "react";
 import TrashCapacityChart from "../GraphicChart/GraphicChart";
-import OrganicCapacityChart from "../GraphicChart/OrganicCapacityChart";
-import UnOrganicCapacityChart from "../GraphicChart/UnOrganicCapacityChart";
-import BarChart from "../GraphicChart/BarChart";
-import Footer from "../Footer/Footer";
 import styles from "./TrashBinOne.module.css";
 import logoSkripsi from "../../assets/logo_skripsi.png";
 
@@ -21,15 +17,9 @@ const TrashBinOne = () => {
           </div>
           <div className={styles.chartWrapper}>
             <TrashCapacityChart />
-            {/* <OrganicCapacityChart /> */}
-            {/* <UnOrganicCapacityChart /> */}
           </div>
-          {/* <BarChart /> */}
         </div>
       </div>
-      {/* <div className={styles.footerContainer}>
-        <Footer />
-      </div> */}
     </section>
   );
 };

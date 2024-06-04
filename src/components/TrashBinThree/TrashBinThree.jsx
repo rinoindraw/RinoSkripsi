@@ -16,17 +16,9 @@ const TrashBinThree = () => {
               <p>BottleCare</p>
             </div>
           </div>
-          {/* <div className={styles.chartWrapper}>
-            <ChartFour />
-            <ChartFive />
-            <ChartSix />
-          </div> */}
           <BarChart />
         </div>
       </div>
-      {/* <div className={styles.footerContainer}>
-        <Footer />
-      </div> */}
     </section>
   );
 };

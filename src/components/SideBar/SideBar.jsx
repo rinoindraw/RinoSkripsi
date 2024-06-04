@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styles from "./SideBar.module.css";
 import SidebarLink from "./SidebarLink";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { BiHomeAlt, BiBarChartAlt2 } from "react-icons/bi";
 import { MdOutlineLightMode, MdDarkMode, MdSpaceDashboard } from "react-icons/md";
 import { BsPersonFill, BsFillTrash2Fill } from "react-icons/bs";
 import { MdBarChart } from "react-icons/md";
@@ -48,11 +47,6 @@ const SideBar = ({
       <div className={styles.menuBar}>
         <div className={styles.menu}>
           <ul className={styles["menu-links"]}>
-            {/* <SidebarLink
-              icon={<BiHomeAlt className={styles.icon} />}
-              text={"Dashboard"}
-              to={"/"}
-            /> */}
             <SidebarLink
               icon={<MdSpaceDashboard className={styles.icon} />}
               text={"Dashboard"}

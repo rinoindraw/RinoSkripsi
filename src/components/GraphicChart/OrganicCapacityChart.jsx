@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Chart } from "chart.js/auto";
 import styles from "./GraphicChart.module.css";
-import {database} from "../../firebase"; // Sesuaikan dengan path ke file konfigurasi Firebase And
+import {database} from "../../firebase"; 
 import { ref, onValue } from "firebase/database";
 
 const OrganicCapacityChart = ({ data }) => {
@@ -50,13 +50,12 @@ const OrganicCapacityChart = ({ data }) => {
   }, [organicCapacity]); // Gunakan metalCapacity sebagai dependensi useEffect
 
   useEffect(() => {
-    const dbRef = ref(database, "tempat_sampah/kapasitas_nonlogam"); // Replace with your database reference path
+    const dbRef = ref(database, "tempat_sampah/kapasitas_nonlogam"); 
 
     onValue(dbRef, (snapshot) => {
       const data = snapshot.val();
       console.log("Organic Capacity:", data);
-      setOrganicCapacity(data); // Perbarui state metalCapacity dengan nilai dari Firebase
-      // Handle the retrieved data here
+      setOrganicCapacity(data); 
     });
   }, []);
 
@@ -67,8 +66,8 @@ const OrganicCapacityChart = ({ data }) => {
         <canvas 
           className={styles.chart} 
           ref={chartRef}
-          width={800} // tentukan lebar yang diinginkan
-          height={600} // tentukan tinggi yang diinginkan
+          width={800} 
+          height={600} 
         ></canvas>
       </div>
       <p className={styles.chartNumber}>{organicCapacity}%</p>

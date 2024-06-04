@@ -1,8 +1,8 @@
 .dashboard {
   margin-top: 0;
   padding: 50px 0 0 10px;
-  max-width: 1200px; /* Menggunakan max-width pada dashboard jika diperlukan */
-  width: 100%; /* Menambahkan width: 100% agar sesuai dengan kontainer */
+  max-width: 1200px; 
+  width: 100%; 
   box-sizing: border-box;
   flex-grow: 1;
 }
@@ -19,8 +19,8 @@ section {
 
 .container {
   display: flex;
-  justify-content: center; /* Menggunakan justify-content untuk membuat container berada di tengah secara horizontal */
-  align-items: flex-start; /* Menjaga elemen tetap di bagian atas */
+  justify-content: center; 
+  align-items: flex-start; 
   width: 95%;
 }
 
@@ -40,18 +40,18 @@ section {
 
 .chartWrapper {
   display: flex;
-  max-width: 1200px; /* Meningkatkan max-width agar lebih proporsional */
+  max-width: 1200px; 
 }
 
 .iconWrapper {
-  margin-left: auto; /* Memindahkan ikon ke pojok kanan */
+  margin-left: auto; 
 }
 
 @media (max-width: 820px) {
   .dashboard {
     margin-top: 0;
     padding: 50px 0 0 10px;
-    width: 80%; /* Menambahkan width: 100% agar sesuai dengan kontainer */
+    width: 80%; 
     box-sizing: border-box;
     flex-grow: 1;
   }

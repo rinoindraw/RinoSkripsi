@@ -1,7 +1,6 @@
 import React from "react";
 import TrashCapacityChart from "../GraphicChart/GraphicChart";
 import OrganicCapacityChart from "../GraphicChart/OrganicCapacityChart";
-import UnOrganicCapacityChart from "../GraphicChart/UnOrganicCapacityChart";
 import BarChart from "../GraphicChart/BarChart";
 import Footer from "../Footer/Footer";
 import styles from "./Dashboard.module.css";
@@ -32,7 +31,6 @@ const Dashboard = () => {
           <div className={styles.chartWrapper}>
             <TrashCapacityChart />
             <OrganicCapacityChart />
-            {/* <UnOrganicCapacityChart /> */}
           </div>
           <BarChart />
         </div>
