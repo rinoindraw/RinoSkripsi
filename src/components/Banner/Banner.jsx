@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import TrackVisibility from "react-on-screen";
 import gundar from "../../assets/gundarsmall.png";
-import pkmLogo from "../../assets/logo_skripsi.png";
+import pkmLogo from "../../assets/LogoSkripsiTextBesar.png";
 import profilePicture from "../../assets/pasfotoeditednew.png";
 // import "animate.css";
 

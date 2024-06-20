@@ -4,7 +4,7 @@ import OrganicCapacityChart from "../GraphicChart/OrganicCapacityChart";
 import BarChart from "../GraphicChart/BarChart";
 import Footer from "../Footer/Footer";
 import styles from "./Dashboard.module.css";
-import pkmLogo from "../../assets/logo_skripsi.png";
+import pkmLogo from "../../assets/LogoSkripsiTextBesar.png";
 import navIcon3 from "../../assets/nav-icon3.svg";
 
 const Dashboard = () => {
@@ -25,7 +25,7 @@ const Dashboard = () => {
             </div>
             <div className={styles.tittleText}>
               <h2>Dashboard</h2>
-              <p>BottleCare</p>
+              <p>TrashCare</p>
             </div>
           </div>
           <div className={styles.chartWrapper}>

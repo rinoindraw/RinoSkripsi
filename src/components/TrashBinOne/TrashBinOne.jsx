@@ -1,7 +1,7 @@
 import React from "react";
 import TrashCapacityChart from "../GraphicChart/GraphicChart";
 import styles from "./TrashBinOne.module.css";
-import logoSkripsi from "../../assets/logo_skripsi.png";
+import logoSkripsi from "../../assets/LogoSkripsiTextBesar.png";
 
 const TrashBinOne = () => {
   return (
@@ -12,7 +12,7 @@ const TrashBinOne = () => {
             <img src={logoSkripsi} alt="Logo" />
             <div className={styles.tittleText}>
               <h2>Logam Trash Bin</h2>
-              <p>BottleCare</p>
+              <p>TrashCare</p>
             </div>
           </div>
           <div className={styles.chartWrapper}>

@@ -5,7 +5,7 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { MdOutlineLightMode, MdDarkMode, MdSpaceDashboard } from "react-icons/md";
 import { BsPersonFill, BsFillTrash2Fill } from "react-icons/bs";
 import { MdBarChart } from "react-icons/md";
-import logoSkripsi from "../../assets/logo_skripsi.png";
+import logoSkripsi from "../../assets/LogoSkripsiTextBesar.png";
 
 const SideBar = ({
   darkMode,
@@ -35,7 +35,7 @@ const SideBar = ({
           </span>
 
           <div className={`${styles.text} ${styles.headerText}`}>
-            <span className={styles.name}>BottleCare</span>
+            <span className={styles.name}>TrashCare</span>
           </div>
         </div>
 

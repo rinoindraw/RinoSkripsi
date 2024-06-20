@@ -1,8 +1,7 @@
 import React from "react";
 import BarChart from "../GraphicChart/BarChart";
-import Footer from "../Footer/Footer";
 import styles from "./TrashBinThree.module.css";
-import logoSkripsi from "../../assets/logo_skripsi.png";
+import logoSkripsi from "../../assets/LogoSkripsiTextBesar.png";
 
 const TrashBinThree = () => {
   return (
@@ -13,7 +12,7 @@ const TrashBinThree = () => {
             <img src={logoSkripsi} alt="Logo" />
             <div className={styles.tittleText}>
               <h2>Graphic</h2>
-              <p>BottleCare</p>
+              <p>TrashCare</p>
             </div>
           </div>
           <BarChart />
