@@ -1,6 +1,6 @@
 import React from "react";
 import TrashCapacityChart from "../GraphicChart/GraphicChart";
-import OrganicCapacityChart from "../GraphicChart/OrganicCapacityChart";
+import NonMetalCapacityChart from "../GraphicChart/NonMetalCapacityChart";
 import BarChart from "../GraphicChart/BarChart";
 import Footer from "../Footer/Footer";
 import styles from "./Dashboard.module.css";
@@ -30,7 +30,7 @@ const Dashboard = () => {
           </div>
           <div className={styles.chartWrapper}>
             <TrashCapacityChart />
-            <OrganicCapacityChart />
+            <NonMetalCapacityChart />
           </div>
           <BarChart />
         </div>

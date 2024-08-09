@@ -4,9 +4,9 @@ import styles from "./GraphicChart.module.css";
 import {database} from "../../firebase"; 
 import { ref, onValue } from "firebase/database";
 
-const OrganicCapacityChart = ({ data }) => {
+const NonMetalCapacityChart = ({ data }) => {
   const chartRef = useRef(null);
-  const [organicCapacity, setOrganicCapacity] = useState(0); // State untuk menyimpan kapasitas metal
+  const [nonMetalCapacity, setnonMetalCapacity] = useState(0); // State untuk menyimpan kapasitas metal
 
   useEffect(() => {
     const ctx = chartRef.current.getContext("2d");
@@ -19,7 +19,7 @@ const OrganicCapacityChart = ({ data }) => {
       labels: ["Filled", "Remaining"],
       datasets: [
         {
-          data: [100 - organicCapacity, organicCapacity], // Menggunakan kapasitas metal yang diperoleh dari Firebase
+          data: [100 - nonMetalCapacity, nonMetalCapacity], // Menggunakan kapasitas metal yang diperoleh dari Firebase
           backgroundColor: ["#EE4E4E", "#FEFDED"],
         },
       ],
@@ -47,15 +47,15 @@ const OrganicCapacityChart = ({ data }) => {
       data: data,
       options,
     });
-  }, [organicCapacity]); // Gunakan metalCapacity sebagai dependensi useEffect
+  }, [nonMetalCapacity]); // Gunakan metalCapacity sebagai dependensi useEffect
 
   useEffect(() => {
     const dbRef = ref(database, "tempat_sampah/kapasitas_nonlogam"); 
 
     onValue(dbRef, (snapshot) => {
       const data = snapshot.val();
-      console.log("Organic Capacity:", data);
-      setOrganicCapacity(data); 
+      console.log("Non-Logam Capacity:", data);
+      setnonMetalCapacity(data); 
     });
   }, []);
 
@@ -70,11 +70,11 @@ const OrganicCapacityChart = ({ data }) => {
           height={600} 
         ></canvas>
       </div>
-      <p className={styles.chartNumber}>{organicCapacity}%</p>
+      <p className={styles.chartNumber}>{nonMetalCapacity}%</p>
       <p className={styles.chartText}>Non-Logam Trash Bin</p>
     </div>
   </div>
   );
 };
 
-export default OrganicCapacityChart;
+export default NonMetalCapacityChart;

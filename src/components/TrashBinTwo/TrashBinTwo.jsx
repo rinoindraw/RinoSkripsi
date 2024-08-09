@@ -1,5 +1,5 @@
 import React from "react";
-import ChartOne from "../GraphicChart/OrganicCapacityChart";
+import ChartOne from "../GraphicChart/NonMetalCapacityChart";
 import styles from "./TrashBinTwo.module.css";
 import logoSkripsi from "../../assets/LogoSkripsiTextBesar.png";
 
