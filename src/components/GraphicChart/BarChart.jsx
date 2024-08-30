@@ -86,7 +86,7 @@ const BarChart = () => {
 
   return (
     <div className={styles.barContainer}>
-      <div className={styles.cardwrapper}>
+      <div className={styles.cardWrapperThree}>
         <div>
           <canvas className={styles.barChart} ref={chartRef}></canvas>
         </div>

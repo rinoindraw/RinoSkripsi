@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Chart } from "chart.js/auto";
 import styles from "./GraphicChart.module.css";
-import {database} from "../../firebase"; 
+import { database } from "../../firebase";
 import { ref, onValue } from "firebase/database";
 
 const TrashCapacityChart = () => {
@@ -55,25 +55,25 @@ const TrashCapacityChart = () => {
     onValue(dbRef, (snapshot) => {
       const data = snapshot.val();
       console.log("Metal Capacity:", data);
-      setMetalCapacity(data); 
+      setMetalCapacity(data);
     });
   }, []);
 
   return (
     <div className={styles.chartContainer}>
-    <div className={styles.cardwrapper}>
-      <div>
-        <canvas 
-          className={styles.chart} 
-          ref={chartRef}
-          width={800} 
-          height={600} 
-        ></canvas>
+      <div className={styles.cardWrapper}>
+        <div>
+          <canvas
+            className={styles.chart}
+            ref={chartRef}
+            width={800}
+            height={600}
+          ></canvas>
+        </div>
+        <p className={styles.chartNumber}>{metalCapacity}%</p>
+        <p className={styles.chartText}>Logam Trash Bin</p>
       </div>
-      <p className={styles.chartNumber}>{metalCapacity}%</p>
-      <p className={styles.chartText}>Logam Trash Bin</p>
     </div>
-  </div>
   );
 };
 

@@ -51,7 +51,25 @@
   font-size: 20px;
 }
 
-.cardwrapper {
+.cardWrapper {
+  padding: 2rem;
+  border-radius: 30px;
+  -webkit-box-shadow: 1px 20px 35px #156437;
+  -moz-box-shadow: 1px 20px 35px #156437;
+  box-shadow: 1px 10px 35px #156437;
+  background-color: rgba(95, 100, 104, 0.3);
+}
+
+.cardWrapperTwo {
+  padding: 2rem;
+  border-radius: 30px;
+  -webkit-box-shadow: 1px 20px 35px #156437;
+  -moz-box-shadow: 1px 20px 35px #156437;
+  box-shadow: 1px 10px 35px #156437;
+  background-color: rgba(0, 183, 255, 0.3);
+}
+
+.cardWrapperThree {
   padding: 2rem;
   border-radius: 30px;
   -webkit-box-shadow: 1px 20px 35px #156437;

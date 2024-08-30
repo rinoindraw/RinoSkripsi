@@ -61,7 +61,7 @@ const NonMetalCapacityChart = ({ data }) => {
 
   return (
     <div className={styles.chartContainer}>
-    <div className={styles.cardwrapper}>
+    <div className={styles.cardWrapperTwo}>
       <div>
         <canvas 
           className={styles.chart} 
